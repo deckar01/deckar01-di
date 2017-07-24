@@ -26,6 +26,16 @@ describe('annotation', function() {
       expect(parse(fn)).to.deep.equal(['one', 'two']);
     });
 
+    it('should parse arrow function argument names', function() {
+      var fn = (one, two) => { return [one, two]; };
+      expect(parse(fn)).to.deep.equal(['one', 'two']);
+    });
+
+    it('should parse a single arrow function argument', function() {
+      var fn = one => { return [one]; };
+      expect(parse(fn)).to.deep.equal(['one']);
+    });
+
     it('should parse comment annotation', function() {
       var fn = function(/* one */ a, /*two*/ b,/*   three*/c) {
         return [a, b, c];
