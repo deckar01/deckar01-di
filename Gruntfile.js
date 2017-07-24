@@ -5,9 +5,9 @@ module.exports = function(grunt) {
       source: ['lib/*.js']
     },
     test: {
-      unit: 'simplemocha:unit'
+      unit: 'mochaTest:unit'
     },
-    simplemocha: {
+    mochaTest: {
       options: {
         ui: 'bdd',
         reporter: 'dot'
@@ -21,9 +21,9 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-simple-mocha');
+  grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-eslint');
 
   grunt.registerTask('default', ['eslint', 'test']);
-  grunt.registerTask('test', ['simplemocha']);
+  grunt.registerTask('test', ['mochaTest']);
 };
