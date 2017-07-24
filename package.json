@@ -1,6 +1,6 @@
 {
-  "name": "di",
-  "version": "0.0.1",
+  "name": "deckar01-di",
+  "version": "0.0.2",
   "description": "Dependency Injection for Node.js. Heavily inspired by AngularJS.",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vojtajina/node-di.git"
+    "url": "git://github.com/deckar01/node-di.git"
   },
   "keywords": [
     "di",
@@ -24,6 +24,6 @@
     "chai": "~1.7",
     "coffee-script": "~1.6"
   },
-  "author": "Vojta Jina <vojta.jina@gmail.com>",
+  "author": "Jared Deckard <jared.deckard@gmail.com>",
   "license": "MIT"
 }
